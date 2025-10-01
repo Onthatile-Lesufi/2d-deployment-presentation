@@ -47,7 +47,16 @@ app.use('/api/products', productRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/orders', orderRoutes);
 
-
+app.get("*", (_, res) =>{
+  res.sendFile(
+    path.join(__dirname, "./client/build/index.html"),
+    function (err) {
+      if (err) {
+        res.status(500).send(err);
+      }
+    }
+  );
+});
 
 // --- Admin Model using Mongoose ---
 
