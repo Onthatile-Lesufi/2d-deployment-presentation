@@ -1,0 +1,4 @@
+.custom-rating .MuiRating-iconEmpty {
+  color: #DDAC7D;    /* Empty stars - make them clearly visible */
+  opacity: 1;     /* Just in case it's low by default */
+}

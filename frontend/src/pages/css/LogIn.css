@@ -1,0 +1,25 @@
+.login-row{
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+}
+.login-col{
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.combination-title{
+    color: #DDAC7D;
+   
+}
+.login-title{
+    color: #DDAC7D;
+    margin-bottom: 10vh;
+}
+.error-message.error{
+    color: red;
+}
+.error-message.success{
+    color: green;
+}

@@ -1,0 +1,30 @@
+.review-form {
+    width: 50%;
+    justify-self: center;
+}
+
+.review-rating-display {
+    justify-self: left;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+}
+
+.review-text-input {
+    width: 100%;
+    padding: 1.75% 2%;
+    border-radius: 1.25rem;
+    border-color: #DDAC7D;
+    border-width: 0.3rem;
+    background-color: #1a1a1aa9;
+    color: white;
+    margin-bottom: 5vh;
+}
+
+.review-text-input:focus {
+    background-color: white;
+    color: black;
+}
+
+.review-submit-button {
+    
+}

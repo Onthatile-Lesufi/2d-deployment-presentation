@@ -1,0 +1,32 @@
+.featured-card-container {
+    width: 100%;
+    height: 38vh;
+    border-radius: 2.5vh;
+    background-color: #DDAC7D;
+    border-width: 0.45vh;
+    overflow: hidden;
+}
+
+
+.featured-image-container {
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    position: absolute;
+}
+
+.featured-text-container {
+    background-color: rgba(0, 0, 0);
+    color: white;
+    position: relative;
+    top: 65%;
+   
+}
+.featured-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card-title {
+    color: #ffffff;
+}
