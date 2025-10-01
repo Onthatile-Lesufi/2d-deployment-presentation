@@ -17,7 +17,7 @@ function Wishlist() {
 useEffect(() => {
   async function GetCurrentUser() {
       try {
-          const _res = await axios.get("http://localhost:5000/api/users/logged", {
+          const _res = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/logged`, {
               withCredentials: true, // Ensure cookies are sent with the request
           });
           if (_res.data) {
@@ -37,11 +37,11 @@ useEffect(() => {
 
   const fetchProducts = async () => {
     try {
-      const userRes = await axios.get(`http://localhost:5000/api/users/${email}`);
+      const userRes = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/${email}`);
       const productIDs = userRes.data.wishlist;
       const productPromises = productIDs.map(async (id) => {
         try {
-          const res = await axios.get(`http://localhost:5000/api/products/${id}`);
+          const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/${id}`);
           return res.data;
         } catch (err) {
           //run logic to remove this from the users wishlist

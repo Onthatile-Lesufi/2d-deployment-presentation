@@ -17,7 +17,7 @@ function Cart() {
 
   const handleRemove = async (id) => {
     try {
-      await axios.put(`http://localhost:5000/api/users/removeFromCart/${user.email}`,{
+      await axios.put(`${process.env.REACT_APP_API_URL}/api/users/removeFromCart/${user.email}`,{
         productID: id
       });
       fetchProducts();
@@ -34,14 +34,14 @@ function Cart() {
    const fetchProducts = async () => {
       try {
         const userRes = await axios.get(
-          `http://localhost:5000/api/users/${user.email}`
+          `${process.env.REACT_APP_API_URL}/api/users/${user.email}`
         );
 
         const productIDs = userRes.data.cartIds;
         const productPromises = productIDs.map(async (id) => {
           try {
             const res = await axios.get(
-              `http://localhost:5000/api/products/${id}`
+              `${process.env.REACT_APP_API_URL}/api/products/${id}`
             );
             return res.data;
           } catch (err) {
@@ -74,7 +74,7 @@ function Cart() {
   useEffect(() => {
     async function GetCurrentUser() {
         try {
-            const _res = await axios.get("http://localhost:5000/api/users/logged", {
+            const _res = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/logged`, {
                 withCredentials: true, // Ensure cookies are sent with the request
             });
             if (_res.data) setUser(_res.data.user);
@@ -109,7 +109,7 @@ function Cart() {
   }
 
   try {
-   await axios.put(`http://localhost:5000/api/users/increaseFromCart/${user.email}`, {
+   await axios.put(`${process.env.REACT_APP_API_URL}/api/users/increaseFromCart/${user.email}`, {
       productID: productId
     });
     fetchProducts(); 
@@ -125,7 +125,7 @@ const handleDecrease = async (productId) => {
   }
 
   try {
-    await axios.put(`http://localhost:5000/api/users/decreaseFromCart/${user.email}`, {
+    await axios.put(`${process.env.REACT_APP_API_URL}/api/users/decreaseFromCart/${user.email}`, {
       productID: productId
     });
     fetchProducts();
@@ -139,7 +139,7 @@ const clearCart = async() => {
     return;
   }
   try {
-    await axios.put(`http://localhost:5000/api/users/clearCart/${user.email}`)
+    await axios.put(`${process.env.REACT_APP_API_URL}/api/users/clearCart/${user.email}`)
     fetchProducts();
   } catch (error) {
     console.error("Error clearing cart", error);
@@ -153,7 +153,7 @@ const clearCartAndBuy = async() => {
     return;
   }
   try {
-    await axios.put(`http://localhost:5000/api/users/clearCart/${user.email}`)
+    await axios.put(`${process.env.REACT_APP_API_URL}/api/users/clearCart/${user.email}`)
     fetchProducts();
     navigate('/purchase');
   } catch (error) {

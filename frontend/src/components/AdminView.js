@@ -26,7 +26,7 @@ const AdminView = ({ id }) => {
   const handleDelete = async (e) => {
     try {
       const res = await axios.delete(
-        `http://localhost:5000/api/products/delete/${id}`
+        `${process.env.REACT_APP_API_URL}/api/products/delete/${id}`
       );
       navigate("/shop");
     } catch (error) {
@@ -39,7 +39,7 @@ const AdminView = ({ id }) => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/products/updateStatus/${id}`,
+        `${process.env.REACT_APP_API_URL}/api/products/updateStatus/${id}`,
         {
           status,
         }
@@ -70,7 +70,7 @@ const AdminView = ({ id }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/products/update/${id}`,
+        `${process.env.REACT_APP_API_URL}/api/products/update/${id}`,
         {
           productName,
           description,
@@ -95,7 +95,7 @@ const AdminView = ({ id }) => {
       try {
         const productId = id;
         const res = await axios.get(
-          `http://localhost:5000/api/products/${productId}`
+          `${process.env.REACT_APP_API_URL}/api/products/${productId}`
         );
         const data = res.data;
 

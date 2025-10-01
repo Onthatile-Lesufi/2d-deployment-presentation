@@ -17,7 +17,7 @@ function Home() {
 
     async function GetProductsServices() {
         try {
-            const _items = await axios.get("http://localhost:5000/api/products");
+            const _items = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
             const _products = _items.data.filter((index) => index.type === "product");
             const _services = _items.data.filter((index) => index.type === "service");
             _products.sort((a, b) => b.rating - a.rating );
@@ -31,7 +31,7 @@ function Home() {
 
     async function GetCurrentUser() {
         try {
-            const _res = await axios.get("http://localhost:5000/api/users/logged", {
+            const _res = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/logged`, {
                 withCredentials: true, // Ensure cookies are sent with the request
             });
             if (_res.data) setUser(_res.data.user);

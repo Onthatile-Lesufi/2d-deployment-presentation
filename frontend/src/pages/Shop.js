@@ -17,7 +17,7 @@ function Shop() {
 
   async function GetCurrentUser() {
       try {
-          const _res = await axios.get("http://localhost:5000/api/users/logged", {
+          const _res = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/logged`, {
               withCredentials: true, // Ensure cookies are sent with the request
           });
           if (_res.data){
@@ -34,7 +34,7 @@ function Shop() {
     
     const fetchProducts = async () => {
       try {
-        const response = await axios.get("http://localhost:5000/api/products");
+        const response = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
         const approvedProducts = response.data.filter( (product) => product.status =="approved" || product.status == "flagged");
         setProducts(approvedProducts);
       } catch (error) {

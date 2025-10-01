@@ -39,7 +39,7 @@ function LoginRegisterForm({ isLogin = true }) {
       // Login
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/users/login",
+          `${process.env.REACT_APP_API_URL}/api/users/login`,
           {
             email,
             password,
@@ -88,7 +88,7 @@ function LoginRegisterForm({ isLogin = true }) {
 
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/users/register",
+          `${process.env.REACT_APP_API_URL}/api/users/register`,
           {
             email,
             password,

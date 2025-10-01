@@ -16,7 +16,7 @@ const ReviewContainer = ({productId}) => {
 
     async function CheckCredentials() {
       try {
-        const _user = await axios.get("http://localhost:5000/api/users/logged", {
+        const _user = await axios.get(`${process.env.REACT_APP_API_URL}/api/users/logged`, {
             withCredentials: true, // Ensure cookies are sent with the request
         });
         console.log(_user.data.user);
@@ -59,12 +59,12 @@ const ReviewContainer = ({productId}) => {
         if (itemRating) {
             try {
                 
-                const _tempResult = await axios.post(`http://localhost:5000/api/products/${productId}/review/post`, {
+                const _tempResult = await axios.post(`${process.env.REACT_APP_API_URL}/api/products/${productId}/review/post`, {
                     _rating: parseFloat(itemRating),
                     _productReview: reviewText,
                     _user: user.email
                 });
-                const _rating = await axios.put(`http://localhost:5000/api/products/${productId}/rating`);
+                const _rating = await axios.put(`${process.env.REACT_APP_API_URL}/api/products/${productId}/rating`);
             } catch (error) {
                 console.log(error);
             }
@@ -74,7 +74,7 @@ const ReviewContainer = ({productId}) => {
 
     async function GrabReviews() {
         try {
-            const _reviews = await axios.get(`http://localhost:5000/api/products/${productId}/reviews`);
+            const _reviews = await axios.get(`${process.env.REACT_APP_API_URL}/api/products/${productId}/reviews`);
             console.log(_reviews);
             setReviews(_reviews.data);
         } catch (error) {

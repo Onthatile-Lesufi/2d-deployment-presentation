@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.09724192.css",
+    "main.js": "/static/js/main.9f162962.js",
+    "static/js/453.fea44ec8.chunk.js": "/static/js/453.fea44ec8.chunk.js",
+    "static/media/danae.jpg": "/static/media/danae.d0740f4055798eb423e1.jpg",
+    "static/media/call-to-action.jpg": "/static/media/call-to-action.54f07c9cbdce63ccc112.jpg",
+    "static/media/Asset_58x.png": "/static/media/Asset_58x.3e285c469cbdfcc6d005.png",
+    "static/media/logo_hit_me_up8x.png": "/static/media/logo_hit_me_up8x.f2034f27cba0025c4b7e.png",
+    "static/media/onti.jpg": "/static/media/onti.b14f071df800321eb9fe.jpg",
+    "static/media/kai.jpg": "/static/media/kai.a73f141a7d3855db0f91.jpg",
+    "static/media/HitmanDark.jpeg": "/static/media/HitmanDark.40c721c1f2217b1b0e5a.jpeg",
+    "static/media/rope.png": "/static/media/rope.d373be2cb14f0ba4df28.png",
+    "static/media/HeartIcon.png": "/static/media/HeartIcon.b128b9a3de57b50297d9.png",
+    "static/media/instagram.svg": "/static/media/instagram.53693fd64a158f28648606d8b2d9e1f4.svg",
+    "static/media/threads.svg": "/static/media/threads.a6f0a5915bfd1ff23f024ae62ce94ae8.svg",
+    "static/media/FullCart.svg": "/static/media/FullCart.7a2d156d77dd8e4455f6e5c6a42ed977.svg",
+    "static/media/EmptyCart.svg": "/static/media/EmptyCart.47e18e65b58ac3e9a45f47bfb72a83d6.svg",
+    "static/media/youtube.svg": "/static/media/youtube.e87f05aebf7f285e17a860b687c288ef.svg",
+    "static/media/facebook.svg": "/static/media/facebook.9590ff947a8fc9b0ee75097639ba2046.svg",
+    "index.html": "/index.html",
+    "static/media/tiktok.svg": "/static/media/tiktok.c47dacb37f1ccb42a3f7f7f5c5736b66.svg",
+    "main.09724192.css.map": "/static/css/main.09724192.css.map",
+    "main.9f162962.js.map": "/static/js/main.9f162962.js.map",
+    "453.fea44ec8.chunk.js.map": "/static/js/453.fea44ec8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09724192.css",
+    "static/js/main.9f162962.js"
+  ]
+}
