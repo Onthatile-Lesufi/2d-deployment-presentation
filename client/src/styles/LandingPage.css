@@ -1,0 +1,479 @@
+:root {
+    --Old-Brick: #9a1c22;
+    --Aubergine: #350a0e;
+    --Anzac: #e1bb3e;
+    --Anzac-hover:rgb(215, 164, 61);
+    --Rose-Fog: #e9c5b5;
+    --Cinnabar: #e35436;
+    --Black: #000000;
+    --White: #fffff0;
+    --font-family-headings: 'Gloock', serif;
+    --font-family-body: 'Merriweather', serif;
+    --button-shadow:box-shadow: inset 4px 4px 10px rgba(255, 255, 255, 0.3), inset -2px -2px 10px rgba(0, 0, 0, 0.7);
+    --button-shadow-hover: inset 4px 4px 10px rgba(0, 0, 0, 0.72), inset -2px -2px 10px rgba(255, 255, 255, 0.3);
+  }
+
+  @import url('https://fonts.googleapis.com/css2?family=Gloock&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+.landing-page {
+    background-color: var(--Black);
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-page .footer-section{
+  margin-top: auto;
+}
+
+body{
+  color: var(--White) !important;
+}
+
+.gloock {
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.merriweather {
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+
+h1{
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  margin: 0;
+  color: var(--White);
+}
+
+h2{
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+  margin: 0;
+  color: var(--White);
+}
+
+h3{
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  margin: 0;
+  color: var(--White);
+}
+
+h4{
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 25px;
+  margin: 0;
+  color: var(--White);
+}
+
+h5{
+  font-family: "Gloock", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0;
+  color: var(--White);
+}
+
+body{
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin: 0;
+  letters-spacing: 0.6px;
+  line-height: normal;
+  color: var(--White);
+}
+
+.hero-section {
+  height: 743px;
+  aspect-ratio: 1300.25/743.00;
+  background: url("../assets/HeroImage.svg") no-repeat center center; /* Center the image */
+  background-size: cover; /* Ensure the image covers the section */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0 auto; /* Center the section itself */
+}
+
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center; /* Center text vertically */
+  text-align: left; /* Align text within the container */
+
+  width: 100%; /* Allow the text container to take full width */
+}
+
+.hero-text h1 {
+  font-size: 94px; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  color: var(--White); /* Set text color */
+  max-width: 420px; /* Set a max width for the text container */
+  margin-left: 115px; /* Add left margin for spacing */
+}
+
+.our-story-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text within the container */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+.our-story-text{
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Center text horizontally */
+  justify-content: center; /* Center text vertically */
+  text-align: left; /* Center text within the container */
+  margin-top: 20px; /* Add top margin for spacing */
+  max-width: 530px; /* Set a max width for the text container */
+  margin-left: 130px; /* Add left margin for spacing */
+}
+
+.our-story-text h2 {
+  margin-bottom: 40px; /* Add bottom margin for spacing */
+}
+
+.our-story-image{
+  height: 682px;
+  
+}
+
+.Read-more-button {
+  background-color: var(--Aubergine); /* Set button background color */
+  color: var(--White) !important; /* Set button text color */
+  border: none; /* Remove default border */
+  border-radius: 5px; /* Add rounded corners */
+  padding: 10px 20px; /* Add padding for button size */
+  font-size: 16px; /* Set font size */
+  cursor: pointer; /* Change cursor to pointer on hover */
+  margin-top: 20px; /* Add top margin for spacing */
+  width: 200px;
+  height: 68px;
+  flex-direction: column;
+  flex-shrink: 0;
+  border-radius: 15px;
+  box-shadow: inset 4px 4px 10px rgba(255, 255, 255, 0.3), inset -2px -2px 10px rgba(0, 0, 0, 0.7); /* Add shadow effect */
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.Read-more-button a{
+  text-decoration: none;
+  color: var(--White); /* Remove underline from link */
+}
+
+.Read-more-button:hover {
+  background-color: var(--Old-Brick); /* Change background color on hover */
+  color: var(--White); /* Change text color on hover */
+  transition: background-color 0.3s ease; /* Add transition effect */
+  box-shadow: inset 4px 4px 10px rgba(0, 0, 0, 0.72), inset -2px -2px 10px rgba(255, 255, 255, 0.3); /* Add shadow effect */
+  color:rgb(57, 57, 57);
+  transform: scale(0.99);
+}
+
+.Read-more-button:hover a {
+  transform: translateY(2px); /* Move text up on hover */
+}
+
+.our-products-section{
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  text-align: center; /* Center text within the container */
+  margin-top: 20px; /* Add top margin for spacing */
+}
+
+.our-products-text{
+  display: flex;
+  flex-direction: column;
+  align-items: left; /* Center text horizontally */
+  justify-content: center; /* Center text vertically */
+  text-align: left; /* Center text within the container */
+  margin-top: 20px; /* Add top margin for spacing */
+  max-width: 530px; /* Set a max width for the text container */
+  margin-right: 130px; /* Add left margin for spacing */
+}
+
+.our-products-text h2 {
+  margin-bottom: 40px; /* Add bottom margin for spacing */
+  
+}
+
+#view-collection{
+  display: flex;
+  width: 350px;
+  height: 68px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-section{
+  
+  margin-top: 50px; /* Add top margin for spacing */
+  width: 100%; /* Set width to 100% */
+  height: 298px;
+  bottom: 0; /* Position at the bottom */
+}
+
+
+/* About */
+.about-page{
+  background-color: var(--Black);
+  color: var(--White);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-page .footer-section{
+  margin-top: auto;
+}
+
+.accordion{
+  margin: 75px 170px;
+  border-radius: 15px;
+}
+
+
+.accordion-item {
+  background-color: var(--Aubergine) !important;
+  color: var(--White) !important;
+  border: none !important;
+}
+
+.accordion-button {
+  background-color: var(--Aubergine) !important;
+  color: var(--White) !important;
+  font-family: "Gloock", serif;
+  font-size: 1.3rem !important;
+  font-weight: 500;
+  border: none !important;
+  box-shadow: inset 3px 3px 5px #2a070b25, inset -3px -3px 5px #2a070b25 !important;
+  transition: background 0.2s, color 0.2s;
+}
+
+.accordion-button:not(.collapsed) {
+  background: linear-gradient(135deg, #9b1c23 0%, #551218 100%) !important;
+  color: var(--White) !important;
+  border: none !important;
+  box-shadow: inset 3px 3px 5px #2a070b25, inset -3px -3px 5px #2a070b25 !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='5,8 10,13 15,8' stroke='%23e9c46a' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E") !important;
+}
+
+.accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem var(--Aubergine) !important;
+  border: none !important;
+}
+
+.accordion-body {
+  background: linear-gradient(135deg, #100203 0%, #2a070b 40%, #100203 100%);
+  color: var(--White) !important;
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem;
+  height: fit-content;
+}
+
+.accordion-button.collapsed {
+  background-color: #551218 !important;
+  color: var(--White) !important;
+  border: none !important;
+  box-shadow: inset 3px 3px 5px #2a070b25, inset -3px -3px 5px #2a070b25 !important;
+}
+
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpolyline points='5,8 10,13 15,8' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E") !important;
+}
+
+.accordion-button:focus, .accordion-button:active {
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+}
+
+#accordion-who {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.who-image img {
+  width: auto;
+  max-height: fill;
+  border-radius: 12px;
+  border-radius: 15px;
+}
+
+.who-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 0;
+  border-radius: 15px;
+  margin-left: auto;
+}
+
+.who-body {
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+}
+
+#accordion-love {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.love-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.love-image {
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.love-body {
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#accordion-mission {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.mission-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.mission-image {
+  max-width: 100%;
+  max-height: 30rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+}
+
+.mission-body {
+  width: 50%;
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: auto;
+}
+
+.who-image img, .love-image img, .mission-image img {
+  border-radius: 15px;
+  mask-image:
+    linear-gradient(to top,    transparent 0%, #fff 7%, #fff 92%, transparent 100%),
+    linear-gradient(to right,  transparent 0%, #fff 7%, #fff 92%, transparent 100%);
+  -webkit-mask-image:
+    linear-gradient(to top,    transparent 0%, #fff 7%, #fff 92%, transparent 100%),
+    linear-gradient(to right,  transparent 0%, #fff 7%, #fff 92%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
+
+.hero-about {
+  width: 100%;
+  height: 600px;
+  background: url("../assets/AboutHero.svg") no-repeat center center; /* Center the image */
+  background-size: cover; /* Ensure the image covers the section */
+  border-radius: 15px;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  margin: 0 auto; /* Center the section itself */
+  background-position: top;
+  mask-image: 
+    linear-gradient(to top,    transparent 0%, #fff 4%, #fff 85%, transparent 100%),
+    linear-gradient(to right,  transparent 0%, #fff 4%, #fff 85%, transparent 100%);
+  -webkit-mask-image: 
+    linear-gradient(to top,    transparent 0%, #fff 4%, #fff 85%, transparent 100%),
+    linear-gradient(to right,  transparent 0%, #fff 4%, #fff 85%, transparent 100%);
+  mask-composite: intersect;
+  -webkit-mask-composite: source-in;
+}
+
+
+.hero-about-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align text to the left */
+  justify-content: center; /* Center text vertically */
+  text-align: left; /* Align text within the container */
+
+  width: 100%; /* Allow the text container to take full width */
+}
+
+.hero-about-text h1 {
+  font-size: 94px; /* Adjust font size as needed */
+  margin: 0; /* Remove default margin */
+  color: var(--White); /* Set text color */
+  max-width: 420px; /* Set a max width for the text container */
+  margin-left: 115px; /* Add left margin for spacing */
+  mix-blend-mode: hard-light; /* or try multiply, overlay, etc. */
+}
+
+.hero-about-text h3 {
+  margin: 0; /* Remove default margin */
+  color: var(--Anzac); /* Set text color */
+  max-width: 420px; /* Set a max width for the text container */
+  margin-left: 115px; /* Add left margin for spacing */
+  mix-blend-mode: screen; /* or try multiply, overlay, etc. */
+}

@@ -1,0 +1,44 @@
+.login-btn {
+  --stop: 60%;
+  background: linear-gradient(90deg, #e1bb3e var(--stop), #e35537 100%);
+  color: #350b0f;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 8px;
+  transition: 
+    color 0.2s cubic-bezier(0.4,0,0.2,1),
+    background 0.4s cubic-bezier(0.4,0,0.2,1),
+    --stop 0.4s cubic-bezier(0.4,0,0.2,1);
+}
+
+.register-btn{
+    background: linear-gradient(90deg, #e1bb3e 60%, #e35537 100%);
+    color: #350b0f;
+    border: none;
+    borderRadius: 8;
+    padding: 12px 0;
+    fontWeight: 700;
+    fontSize: 18;
+    cursor: pointer;
+    width: 100%;
+    transition: 0.4s cubic-bezier(0.4,0,0.2,1);
+    
+}
+
+.login-btn:hover,
+.login-btn:focus {
+  --stop: 20%;
+  color: var(--Aubergine);
+  box-shadow: inset 2px 2px 15px rgba(0, 0, 0, 0.14), inset -2px -2px 10px rgba(82, 31, 0, 0.18);
+}
+
+.register-btn:hover, .register-btn:focus {
+  background: linear-gradient(90deg, #e1bb3e 20%, #e35537 100%) !important;
+  color: var(--Aubergine) !important;
+  
+}

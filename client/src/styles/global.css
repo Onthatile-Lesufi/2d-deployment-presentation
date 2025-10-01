@@ -1,0 +1,32 @@
+:root {
+    --primary: #9B1C23;
+    --dark: #350B0F;
+    --gold: #E0BA3E;
+    --orange: #E35537;
+    --beige: #E9C4B4;
+    --button-shadow:box-shadow: inset 4px 4px 10px rgba(255, 255, 255, 0.3), inset -2px -2px 10px rgba(0, 0, 0, 0.7);
+    --button-shadow-hover: inset 4px 4px 10px rgba(0, 0, 0, 0.72), inset -2px -2px 10px rgba(255, 255, 255, 0.3);
+  }
+  
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: var(--beige);
+    color: var(--dark);
+}
+  
+button {
+    padding: 0.6rem 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 6px;
+    font-weight: bold;
+}
+  
+button:hover {
+    background-color: var(--orange);
+}
+  

@@ -1,0 +1,188 @@
+.filter-panel {
+  width: 250px;
+  background-color: #f9f9f9;
+  padding: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  height: fit-content;
+  font-family: 'Gloock', serif;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Prevent horizontal overflow */
+  display: flex;
+  flex-direction: column;
+  max-height: 400px;
+}
+
+.filterAccordion,
+.filterAccordion-item,
+.filterAccordion-header,
+.filterAccordion-body {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.filterAccordion {
+  border-radius: 8px;
+}
+
+.filterAccordion-body ul {
+  padding-left: 0;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the list items */
+}
+
+.filter-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 0; /* Remove any default margin */
+}
+
+.filter-option {
+  margin-bottom: 8px;
+  width: 100%;
+  display: flex;
+  justify-content: center; /* Center the button */
+}
+
+.category-button {
+  width: 80%; /* Slightly less than 100% for padding */
+  text-align: center;
+  background-color: #eee;
+  color: #333;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  box-sizing: border-box;
+  margin: 0;
+  display: block;
+  font-family: "Merriweather", serif;
+}
+
+.category-button:hover {
+  background-color: #ddd;
+}
+
+.category-button.active {
+  background-color: #9B1C23;
+  color: white;
+}
+
+.filter-categories {
+  margin-top: -50px; /* Space below the title */
+  left: 0;
+  top: 0;
+  padding: 0;
+  height: auto;
+  max-height: 584.1px; /* Limit height for overflow */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center the buttons */
+  justify-content: flex-start; /* Center the buttons vertically */
+  font-family: "Merriweather", serif;
+}
+
+/* Style for single-category buttons and the "All" button */
+.category-accordion-btn {
+  width: 100%;
+  background: var(--Aubergine, #2a073b);
+  color: var(--White);
+  border: none;
+  border-radius: 8px;
+  font-family: "Merriweather", serif;
+  font-size: 1.0rem;
+  font-weight: 500;
+  box-shadow: inset 3px 3px 5px #2a070b25, inset -3px -3px 5px #2a070b25;
+  padding: 12px 18px;
+  margin-bottom: 8px;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  display: block;
+}
+
+.category-accordion-btn.active,
+.category-accordion-btn:focus {
+  background: #9B1C23;
+  color: #fff;
+}
+
+.category-accordion-btn:hover {
+  background: #551218;
+  color: #fff;
+}
+
+/* Space accordion items 8px apart */
+.accordion-item {
+  margin-bottom: 8px !important;
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+/* Accordion header styling for consistency */
+.accordion-button {
+  background: var(--Aubergine, #2a073b) !important;
+  color: var(--White) !important;
+  font-family: "Merriweather", serif;
+  font-size: 1.1rem !important;
+  font-weight: 500;
+  border: none !important;
+  box-shadow: inset 3px 3px 5px #2a070b25, inset -3px -3px 5px #2a070b25 !important;
+  border-radius: 8px !important;
+  padding: 12px 18px;
+  transition: background 0.2s, color 0.2s;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #9B1C23 !important;
+  color: #fff !important;
+}
+
+.accordion-button:hover {
+  background: #551218 !important;
+  color: #fff !important;
+}
+
+/* Subcategory buttons inside accordion */
+.category-sub-btn {
+  width: 92%;
+  margin: 6px auto 0 auto;
+  background: #eee;
+  color: #333;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-family: "Merriweather", serif;
+  padding: 8px 12px;
+  text-align: left;
+  transition: background 0.2s, color 0.2s;
+  display: block;
+}
+
+.category-sub-btn.active,
+.category-sub-btn:focus {
+  background: #9B1C23;
+  color: #fff;
+}
+
+.category-sub-btn:hover {
+  background: #ddd;
+  color: #333;
+}
+
+
+
+/* Webkit browsers */
+.filter-panel::-webkit-scrollbar,
+.filter-categories::-webkit-scrollbar {
+  display: none;
+  /* width: 2px;
+  background: none; */
+}
