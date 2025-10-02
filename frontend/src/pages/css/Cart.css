@@ -1,0 +1,95 @@
+.cart-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  
+}
+
+.cart-container h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: 600;
+  color: #EE5D02;
+
+}
+
+.cart-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 2rem;
+}
+
+.cart-table th {
+  text-align: center;
+  padding: 1rem;
+  background-color: #FDB964;
+  border-bottom: 2px solid #eaeaea;
+  font-size: 1rem;
+
+}
+
+
+.cart-table td {
+  padding: 1rem;
+  vertical-align: top;
+}
+
+/* Summary Section */
+.cart-summary {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.summary-box {
+  max-width: 300px;
+  width: 100%;
+  border: 1px solid #eee;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: #FDB964;
+}
+
+.summary-box h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.summary-line.total {
+  font-weight: 700;
+  font-size: 1.05rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+.summary-line label {
+  margin-bottom: 0.5rem;
+  display: block;
+  font-weight: 500;
+}
+
+.summary-line input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.buy-button {
+  margin-top: 1.5rem;
+  width: 100%;
+}

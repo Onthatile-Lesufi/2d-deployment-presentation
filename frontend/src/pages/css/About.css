@@ -1,0 +1,233 @@
+.about-page {
+  padding: 40px 20px;
+  color: #eee;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== INTRO SECTION ========== */
+
+.about-intro {
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-intro h1 {
+  color: #F3B86D;
+  font-size: clamp(2rem, 6vw, 7rem);
+  text-align: center;
+}
+
+.about-intro-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 30px;
+}
+
+.about-description {
+  flex: 1 1 300px;
+  max-width: 400px;
+  background-color: #f3b96d9d;
+  padding: 20px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 550px;
+}
+
+.about-img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.about-btn {
+  margin-top: auto;
+  padding: 12px 20px;
+  width: fit-content;
+  color: white;
+  background: transparent;
+  border: none;
+  outline: 2px solid white;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.about-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ========== HOW IT WORKS ========== */
+
+.about-how {
+  margin-top: 60px;
+  background-color: #68626290;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.about-how-heading {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: #F3B86D;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-how ol {
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 1rem;
+  line-height: 1.8;
+  color: #eee;
+}
+
+.about-how li {
+  margin-bottom: 12px;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+
+.about-how p {
+  font-size: 0.95rem;
+  color: #ccc;
+  text-align: center;
+}
+
+/* ========== TEAM SECTION ========== */
+
+.about-team {
+  margin-top: 60px;
+  width: 100%;
+  max-width: 1100px;
+}
+
+.about-team h2 {
+  color: #F3B86D;
+  font-size: clamp(1.8rem, 5vw, 2.5rem);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+}
+
+.team-member {
+  background-color: #ff801f91;
+  padding: 20px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 320px;
+  text-align: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.team-text {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* ========== TECH STACK SECTION ========== */
+
+.about-tech {
+  margin-top: 60px;
+  background-color: #68626290;
+  padding: 40px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 700px;
+}
+
+.about-tech h2 {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  color: #F3B86D;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.about-tech ul {
+  list-style-position: inside;
+  padding-left: 0;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  text-align: left;
+  color: #eee;
+}
+
+.about-tech li {
+  margin-bottom: 12px;
+  padding-left: 10px;
+  text-indent: -10px;
+}
+
+/* ========== FOOTER ========== */
+
+.about-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 40px;
+}
+
+/* ========== MEDIA QUERIES ========== */
+
+@media screen and (max-width: 768px) {
+  .about-description {
+    min-height: auto;
+  }
+
+  .team-member img {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-intro h1 {
+    font-size: clamp(1.5rem, 8vw, 3rem);
+  }
+
+  .about-btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+  }
+
+  .about-how,
+  .about-tech {
+    padding: 20px;
+  }
+
+  .about-how ol,
+  .about-tech ul {
+    font-size: 1rem;
+  }
+}

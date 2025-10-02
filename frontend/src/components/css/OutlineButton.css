@@ -1,0 +1,31 @@
+.outline-button-container {
+    height: 6.5vh;
+    width: 100%;
+}
+
+.outline-button-component {
+    height: 100%;
+    width: 100%;
+    border-radius: 100px;
+    border-color: #DDAC7D;
+    background-color: rgba(0, 0, 0, 0);
+    border-width: 0.15vw;
+}
+ @media screen and (max-width: 768px) {
+    .outline-button-container {
+        height: 4vh;
+    }
+    
+ }
+
+.outline-button-component:hover {
+    background-color: #DDAC7D;
+    color: black;
+    border-color: #DDAC7D;
+}
+
+.btn-primary {
+    --bs-btn-active-bg: #DDAC7D;
+    --bs-btn-active-color: black;
+    --bs-btn-active-border-color: #DDAC7D;
+}

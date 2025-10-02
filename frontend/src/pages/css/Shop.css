@@ -1,0 +1,129 @@
+.shop-container {
+    z-index: 1;
+
+}
+
+.shop-container a {
+  text-decoration: none;
+ 
+}
+
+.shop-submenu {
+    width: 100%;
+    height:30vh;
+    padding-left: 15%;
+    padding-right: 12.5%;
+    margin-top: 7.5vh;
+}
+
+.shop-title {
+    color: #EE5D02;
+}
+
+.filter-button-holder {
+    width: 45%;
+}
+
+.form-input {
+    width: 45%;
+    color: white;
+}
+
+.form-text {
+    background-color: rgba(0, 0, 0,0);
+    color: white;
+    text-decoration: none;
+    padding-left: 1.5vw;
+    border-width: 0.15vw;
+    border-radius: 500px;
+    border-color: #DDAC7D;
+    height: 6.75vh;
+}
+
+#shop-item-shop-container{
+    margin-bottom: 10vh;
+}
+
+
+
+.shop-submenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.shop-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.filter-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.add-product-button {
+  background-color: #ee5d02;
+  color: white;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-bottom: 10px;
+ 
+  transition: background-color 0.3s ease;
+}
+
+.add-product-button:hover {
+  background-color: #ddac7d;
+  color: black;
+}
+
+
+/* filter css---------------- */
+
+/* Container for the filter buttons */
+.shop-filter-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+  min-height: 5vh;
+}
+
+/* Button group styles */
+.shop-filter-buttons {
+  display: flex;
+  gap: 1rem;
+ 
+}
+
+.shop-filter-buttons button {
+  padding: 0.6rem 1.5rem;
+  width: 100%;
+  cursor: pointer;
+}
+
+/* Base button style */
+.shop-filter-button {
+  padding: 0.8rem 1.5rem;
+  padding-top: 2vh;
+  border: 2px solid #DDAC7D; /* fallback green */
+  border-radius: 30px;
+  background-color: transparent;
+  color: #DDAC7D;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Active button style */
+.shop-filter-active {
+  background-color: #DDAC7D;
+  color: rgb(0, 0, 0);
+  border-color: #DDAC7D;
+}
