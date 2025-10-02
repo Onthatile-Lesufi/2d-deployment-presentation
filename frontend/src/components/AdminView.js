@@ -26,7 +26,7 @@ const AdminView = ({ id }) => {
   const handleDelete = async (e) => {
     try {
       const res = await axios.delete(
-        `http://localhost:5000/api/products/delete/${id}`
+        `https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/delete/${id}`
       );
       navigate("/shop");
     } catch (error) {
@@ -39,7 +39,7 @@ const AdminView = ({ id }) => {
 
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/products/updateStatus/${id}`,
+        `https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/updateStatus/${id}`,
         {
           status,
         }
@@ -70,7 +70,7 @@ const AdminView = ({ id }) => {
     e.preventDefault();
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/products/update/${id}`,
+        `https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/update/${id}`,
         {
           productName,
           description,
@@ -95,7 +95,7 @@ const AdminView = ({ id }) => {
       try {
         const productId = id;
         const res = await axios.get(
-          `http://localhost:5000/api/products/${productId}`
+          `https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/${productId}`
         );
         const data = res.data;
 

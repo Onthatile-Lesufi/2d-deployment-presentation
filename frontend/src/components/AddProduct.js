@@ -45,7 +45,7 @@ const AddProductPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/products/register", {
+      const res = await axios.post("https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/register", {
         productName,
         description,
         price: parseFloat(price),
@@ -77,7 +77,7 @@ const AddProductPage = () => {
 
   const fetchProducts = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/products");
+      const res = await axios.get("https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products");
       const ids = res.data.map(product => product._id);
       const dataImages = res.data.map(product => product.image);
       setProductId(ids);

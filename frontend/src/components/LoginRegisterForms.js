@@ -39,7 +39,7 @@ function LoginRegisterForm({ isLogin = true }) {
       // Login
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/users/login",
+          "https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/login",
           {
             email,
             password,
@@ -88,7 +88,7 @@ function LoginRegisterForm({ isLogin = true }) {
 
       try {
         const res = await axios.post(
-          "http://localhost:5000/api/users/register",
+          "https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/register",
           {
             email,
             password,

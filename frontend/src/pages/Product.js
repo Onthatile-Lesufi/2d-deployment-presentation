@@ -45,7 +45,7 @@ function Admin() {
     const status = 'flagged';
     
     try {
-      const res = await axios.put(`http://localhost:5000/api/products/updateStatus/${id}`, {
+      const res = await axios.put(`https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/updateStatus/${id}`, {
         status
       });
       setIsFlagged(true);
@@ -57,7 +57,7 @@ function Admin() {
   useEffect(() => {
     async function CheckCredentials() {
       try {
-        const _user = await axios.get("http://localhost:5000/api/users/logged", {
+        const _user = await axios.get("https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/logged", {
             withCredentials: true, // Ensure cookies are sent with the request
         });
         if (_user) {
@@ -75,7 +75,7 @@ function Admin() {
   const addToCart = async () => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/users/cart/${user.email}`,
+        `https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/cart/${user.email}`,
         {
           productID: id,
         }
@@ -87,7 +87,7 @@ function Admin() {
   const fetchProducts = async () => {
     try {
       
-      const res = await axios.get(`http://localhost:5000/api/products/${id}`);
+      const res = await axios.get(`https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/${id}`);
       setImage(res.data.image);
       setProductName(res.data.productName);
       setRating(res.data.rating);
@@ -105,7 +105,7 @@ function Admin() {
   const addToWishlist = async () => {
     try {
       const res = await axios.put(
-        `http://localhost:5000/api/users/wishlist/${user.email}`,
+        `https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/wishlist/${user.email}`,
         {
           productID: id,
         }

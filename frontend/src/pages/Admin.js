@@ -54,7 +54,7 @@ function Product() {
 
   const fetchUserRole = async () => {
     try {
-      const res = await axios.get(`http://localhost:5000/api/users/${email}`);
+      const res = await axios.get(`https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/${email}`);
       setRole(res.data.role);
     } catch (error) {
       console.log("Error finding the user's role");
@@ -64,7 +64,7 @@ function Product() {
   const fetchProducts = async () => {
     try {
       setIsLoaded(false);
-      const res = await axios.get(`http://localhost:5000/api/products/`);
+      const res = await axios.get(`https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/`);
       let pending = [];
       for (let index = 0; index < res.data.length; index++) {
         let temp = res.data[index];
@@ -96,7 +96,7 @@ function Product() {
     const status = 'approved';
     
     try {
-      const res = await axios.put(`http://localhost:5000/api/products/updateStatus/${pendingProducts[0]._id}`, {
+      const res = await axios.put(`https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/updateStatus/${pendingProducts[0]._id}`, {
         status
       });
       fetchProducts();
@@ -107,7 +107,7 @@ function Product() {
   }
   const denyProduct = async() => {
     try {
-      const res = await axios.delete(`http://localhost:5000/api/products/delete/${pendingProducts[0]._id}`);
+      const res = await axios.delete(`https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/products/delete/${pendingProducts[0]._id}`);
       fetchProducts();
     } catch (error) {
       console.log("Error updating status to approved", error);

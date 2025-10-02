@@ -43,7 +43,7 @@ function Navbar() {
 
     async function CheckCredentials() {
       try {
-        const _user = await axios.get("http://localhost:5000/api/users/logged", {
+        const _user = await axios.get("https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/logged", {
             withCredentials: true, // Ensure cookies are sent with the request
         });
         if (_user) {
@@ -58,7 +58,7 @@ function Navbar() {
   ///logout function
   async function LogOut() {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/logout");
+      const res = await axios.get("https://dv200-deployment-presentation-4af1d27ec0f4.herokuapp.com/api/users/logout");
       navigate("/");
       console.log(res);
     } catch (error) {
